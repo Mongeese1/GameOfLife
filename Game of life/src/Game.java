@@ -1,8 +1,13 @@
 
 public class Game {
-	State gameState;
-	
-	public void Print() {
-		System.out.println(gameState.cells.toString());
-	}
+    int a;
+    int b;
+    State state;
+
+    public Game(final int a, final int b){
+        this.a = a;
+        this.b = b;
+        state = new State(a,b);
+    }
 }
+
